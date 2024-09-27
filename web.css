@@ -1,135 +1,120 @@
+/* styles.css */
 :root {
     --primary-color: #32CD32;
     --secondary-color: #000000;
     --accent-color: #006400;
     --background-color: #f4f4f4;
     --text-color: #000000;
-}
-
-* {
+  }
+  
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
+  }
+  
+  body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--background-color);
-}
-
-.container {
+  }
+  
+  .container {
     width: 80%;
     margin: 0 auto;
     padding: 2rem 0;
-}
-
-header {
+  }
+  
+  header {
     background-color: var(--primary-color);
     color: white;
     text-align: center;
     padding: 2rem 0;
-}
-
-header h1 {
+    margin-bottom: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  header h1 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
-    animation: typewriter 2s ease-in-out;
-}
-
-@keyframes typewriter {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
-}
-
-nav {
+  }
+  
+  nav {
     background-color: var(--secondary-color);
     padding: 1rem 0;
-}
-
-nav ul {
+    margin-bottom: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
-}
-
-nav ul li {
+  }
+  
+  nav ul li {
     margin: 0 1rem;
-}
-
-nav ul li a {
+  }
+  
+  nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
+  }
+  
+  nav ul li a:hover {
     color: var(--accent-color);
-}
-
-.animate {
-    animation: animateMenu 0.5s ease-in-out;
-}
-
-@keyframes animateMenu {
-    from {
-        transform: translateY(10px);
-    }
-    to {
-        transform: translateY(0);
-    }
-}
-
-section {
+  }
+  
+  section {
     margin-bottom: 3rem;
-}
-
-h2 {
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
     color: var(--secondary-color);
     margin-bottom: 1rem;
     border-bottom: 2px solid var(--primary-color);
     padding-bottom: 0.5rem;
-}
-
-.member-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.member-list li {
-  margin-bottom: 1rem;
-  padding: 0;
-}
-
-.member-list li strong {
+  }
+  
+  .member-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .member-list li {
+    margin-bottom: 1rem;
+    padding: 0;
+  }
+  
+  .member-list li strong {
     display: block;
     font-size: 1.1rem;
     color: var(--primary-color);
-}
-
-.member-list li span {
+  }
+  
+  .member-list li span {
     font-style: italic;
     color: var(--secondary-color);
-}
-
-.issues-list h3 {
+  }
+  
+  .issues-list h3 {
     color: var(--primary-color);
     margin-bottom: 0.5rem;
-}
-
-.issues-list ul {
+  }
+  
+  .issues-list ul {
     list-style-type: disc;
     margin-left: 2rem;
-}
-
-.vote-steps li::before {
+  }
+  
+  .vote-steps li::before {
     content: counter(step-counter);
     counter-increment: step-counter;
     background-color: var(--accent-color);
@@ -141,18 +126,18 @@ h2 {
     justify-content: center;
     align-items: center;
     font-size: 0.8rem;
-}
-
-.contact-info a {
+  }
+  
+  .contact-info a {
     color: var(--primary-color);
     text-decoration: none;
-}
-
-.contact-info a:hover {
+  }
+  
+  .contact-info a:hover {
     text-decoration: underline;
-}
-
-footer {
+  }
+  
+  footer {
     background-color: var(--secondary-color);
     color: white;
     text-align: center;
@@ -160,17 +145,14 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-}
-
-.hover {
+    margin-top: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .hover {
     background-color: #f0f0f0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.fade-in {
-    animation: fadeIn 1s ease-in-out;
-}
-.vote-steps li::before {
-  display: none;
-}
+  }
+  .vote-steps li::before {
+    display: none;
+  }
