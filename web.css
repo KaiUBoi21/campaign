@@ -1,9 +1,9 @@
 :root {
-    --primary-color: #4a90e2;
-    --secondary-color: #2c3e50;
-    --accent-color: #e74c3c;
+    --primary-color: #32CD32;
+    --secondary-color: #000000;
+    --accent-color: #006400;
     --background-color: #f4f4f4;
-    --text-color: #333;
+    --text-color: #000000;
 }
 
 * {
@@ -97,23 +97,15 @@ h2 {
     padding-bottom: 0.5rem;
 }
 
-.member-list, .issues-list, .vote-steps, .contact-info {
-    list-style-type: none;
-    padding-left: 1rem;
+.member-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.member-list li, .issues-list li, .vote-steps li, .contact-info li {
-    margin-bottom: 1rem;
-    position: relative;
-    padding-left: 1.5rem;
-}
-
-.member-list li::before, .issues-list li::before, .vote-steps li::before, .contact-info li::before {
-    content: '•';
-    color: var(--accent-color);
-    position: absolute;
-    left: 0;
-    font-size: 1.5rem;
+.member-list li {
+  margin-bottom: 1rem;
+  padding: 0;
 }
 
 .member-list li strong {
@@ -178,22 +170,4 @@ footer {
 
 .fade-in {
     animation: fadeIn 1s ease-in-out;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.scroll-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #4a90e2;
-    color: white;
-    padding: 10px 20
 }
