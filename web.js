@@ -1,9 +1,7 @@
-// Selectors
+// script.js
 const navLinks = document.querySelectorAll('nav ul li a');
 const sections = document.querySelectorAll('main section');
-const header = document.querySelector('header');
 
-// Add event listeners to nav links
 navLinks.forEach((link) => {
   link.addEventListener('click', (e) => {
     e.preventDefault();
@@ -13,6 +11,7 @@ navLinks.forEach((link) => {
 });
 
 // Add event listener to header
+const header = document.querySelector('header');
 header.addEventListener('mouseover', () => {
   header.classList.add('hover');
 });
