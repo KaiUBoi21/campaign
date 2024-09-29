@@ -101,7 +101,7 @@
   
   .member-list li span {
     font-style: italic;
-    color: var(--secondary-color);
+    color: var(--primary-color);
   }
   
   .issues-list h3 {
